@@ -7,6 +7,7 @@
     <title>Datetime superapp</title>
     <script src="./src/main.js" type="module"></script>
     <script src="./src/tabs.js" type="module"></script>
+    <script src="./src/timer.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,11 +35,17 @@
                     <p id="datecalc__result"></p>
                 </form>
             </div>
-			<div class="tab tab-2">Содержание таба 2</div>
+			<div class="tab tab-2">
+                <div class="time"></div>
+                    <input id="input" type="text">
+                    <div class="">
+                        <button id="start">Start</button>
+                        <button id="stop">Stop</button>
+                        <button id="reset">Reset</button>
+                    </div>
+            </div>
         </div>   
-        
-    </div>
-    
+    </div>  
 </body>
 
 </html>
