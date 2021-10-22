@@ -46,4 +46,3 @@ function subtractTime() {
         audio.play();
     }
 }
-
