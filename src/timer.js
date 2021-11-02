@@ -1,7 +1,14 @@
+
 const input = document.getElementById('input');
 const blockTime = document.querySelector('.time');
 let interval;
-const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3');
+
+let audio = new Howl({
+    src: ['./audio/notification.mp3']
+})
+
+ 
+
 
 
 blockTime.innerHTML = 0;
