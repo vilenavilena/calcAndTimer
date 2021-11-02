@@ -1,8 +1,9 @@
 import { formatError } from "./common.js";
+import Howl from "./howler.js"
+
 const input = document.getElementById('input');
 const blockTime = document.querySelector('.time');
 let interval;
-//import { Howl } from "https://raw.githubusercontent.com/goldfire/howler.js/master/dist/howler.core.min.js"
 let audio = new Howl({
     src: ['./audio/notification.mp3']
 })
@@ -33,7 +34,7 @@ document.getElementById('stop').addEventListener('click', () => {
 
 });
 
-document.querySelectorAll('reset').addEventListener('click', () => {
+document.getElementById('reset').addEventListener('click', () => {
     input.value = 0;
     blockTime.innerHTML = 0;
 });
