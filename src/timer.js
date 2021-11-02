@@ -1,9 +1,14 @@
+import { formatError } from "./common.js";
+import Howl from "./howler.js"
+
 const input = document.getElementById('input');
 const blockTime = document.querySelector('.time');
 let interval;
-const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3');
+let audio = new Howl({
+    src: ['./audio/notification.mp3']
+})
 
-
+ 
 blockTime.innerHTML = 0;
 input.value = 0;
 const end = () => {
@@ -13,7 +18,8 @@ const end = () => {
 document.getElementById('start').addEventListener('click', () => {
     if (input.value < 0) {
         input.value = 0;
-        blockTime.innerHTML = 0;   
+        blockTime.innerHTML = 0; 
+        
     } else {
         clearInterval(interval);
 
@@ -44,6 +50,6 @@ function subtractTime() {
     } else {
         clearInterval(interval);
         audio.play();
+        timer__err.innerHTML = formatError("Время закончилось!")  
     }
 }
-
