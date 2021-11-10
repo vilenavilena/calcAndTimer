@@ -1,0 +1,34 @@
+{
+  "name": "calcandtimer",
+  "version": "1.0.0",
+  "description": "Дз к курсу инструменты сборки web-проектов",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilenavilena/calcAndTimer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vilenavilena/calcAndTimer/issues"
+  },
+  "homepage": "https://github.com/vilenavilena/calcAndTimer#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.62.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "luxon": "^2.1.1"
+  }
+}

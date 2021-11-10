@@ -1,4 +1,4 @@
-import { DateTime } from "./luxon.js"; 
+import { DateTime } from "luxon"; 
 import { formatError } from "./common.js";
 
 export function diffDates(firstDate, secondDate) { 
