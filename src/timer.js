@@ -1,13 +1,16 @@
 import { formatError } from "./common.js";
-import {Howl, Howler} from 'howler';
+//import { Howl } from 'howler';
+
 
 const input = document.getElementById('input');
 const blockTime = document.querySelector('.time');
-
 let interval;
-let audio = new Howl({
-    src: ['./audio/notification.mp3']
-})
+const audio = new Audio('notification.mp3');
+//  let audio = new Howl({
+//  src: ['./audio/notification.mp3']
+//})
+
+
 
  
 blockTime.innerHTML = 0;

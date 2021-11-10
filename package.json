@@ -4,9 +4,9 @@
   "description": "Дз к курсу инструменты сборки web-проектов",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "serve": "webpack serve"
+    "dev": "npx webpack --mode=development",
+    "build": "npx webpack --mode=production",
+    "serve": "npx webpack serve"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
     "style-loader": "^3.3.1",
     "webpack": "^5.62.2",
     "webpack-cli": "^4.9.1",
