@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "howler": "^2.2.3",
-    "luxon": "^2.1.1"
+    "luxon": "^2.1.1",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }
