@@ -29,7 +29,7 @@
     "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
-    "howler": "^2.2.3",
+    
     "luxon": "^2.1.1",
     "webpack-bundle-analyzer": "^4.5.0"
   }
